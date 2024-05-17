@@ -6,7 +6,6 @@ import { getState, saveState } from "@actions/core";
 const isPost = !!getState("isPost");
 
 const main = async () => {
-	await install();
 	await configure();
 };
 
