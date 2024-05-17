@@ -36,5 +36,5 @@ export const install = async () => {
 
 export const is_installed = async () => {
     let return_code = await exec("attic", ["-V"]);
-    core.info(return_code);
+    return return_code==0;
 };
